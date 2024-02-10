@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+header nav .linha {
+  border-top: 1px solid black;
+  width: 80%;
+}
+header nav ul {
+  display: inline-flex;
+  gap: 2rem;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #0C0421;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "montserrat", sans-serif;
+}
+header #home {
+  max-width: 1040px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header #home .textos-home {
+  max-width: 464px;
+}
+header #home .textos-home h1 {
+  font-family: "krona One", sans-serif;
+  color: #0C0421;
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+header #home .textos-home h1 span {
+  color: #4E75FF;
+}
+header #home .textos-home .btn-main {
+  font-family: "montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  background: #4E75FF;
+  padding: 24px 60px;
+}
+header #home .textos-home .btn-main:hover {
+  background-color: #85A0FF;
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
