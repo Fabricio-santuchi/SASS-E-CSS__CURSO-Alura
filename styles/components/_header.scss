@@ -21,11 +21,16 @@ header{
             }
             a{
                 text-decoration: none;
-                color: variaveis.$cor-primaria;
+                @include mixins.ff-fs-cl(variaveis.$ft-textos,1rem,variaveis.$cor-primaria);
                 font-weight: 400;
-                font-size: 22px;
-                font-family: variaveis.$ft-textos;
+                transition: 0.5s;
+                
+                &:hover{
+                    font-weight: 600;
+                    transition: 0.5s;
+                }
             }
+            
         }
     }
     #home{
@@ -39,9 +44,7 @@ header{
         .textos-home{
             max-width: 464px;
             h1{
-                font-family: variaveis.$ft-titulos;
-                color: variaveis.$cor-primaria;
-                font-size: 42px;
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos,42px,variaveis.$cor-primaria);
                 margin-bottom: 2rem;
                 span{
                     color: variaveis.$cor-secundaria;
@@ -49,19 +52,20 @@ header{
             }
     
             .btn-main{
-                font-family: variaveis.$ft-textos;
-                font-size: 22px;
+                @include mixins.ff-fs-cl(variaveis.$ft-textos,22px,white);
                 font-weight: 600;
-                color: white;
 
                 border: none;
                 cursor: pointer;
                 border-radius: 40px;
-                background: variaveis.$cor-secundaria;
+                background: variaveis.$cor-terciaria;
+                transition: 0.5s;
                 padding: 24px 60px;
-            }
-            .btn-main:hover{
-                background-color: variaveis.$cor-terciaria;
+                
+                &:hover{
+                    background-color: variaveis.$cor-secundaria;
+                    transition: 0.5s;
+                }
             }
         }
         .img-home{
