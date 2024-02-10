@@ -1,0 +1,14 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+
+footer{
+    @include mixins.margem-central(100%);
+    margin-top: 5rem;
+    background: variaveis.$cor-quaternaria;
+    text-align: center;
+    padding: 2rem;
+    small{
+        @include mixins.ff-fs-cl(variaveis.$ft-textos,1rem,variaveis.$cor-primaria);
+    }
+}
